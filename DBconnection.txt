@@ -13,6 +13,7 @@ public:
     ~DBconnection();
     bool open();
     void olose();
+	void addToUserTable();
 
 private:
     QSqlDatabase *db = nullptr;
