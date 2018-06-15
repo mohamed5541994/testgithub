@@ -1,0 +1,26 @@
+#ifndef MESSAGE_H
+#define MESSAGE_H
+
+#include<QString>
+#include<QMessageBox>
+
+class Message: public QWidget
+{
+public:
+    Message();
+    static void Platformname(QWidget *parent);
+    static void Link(QWidget *parent);
+    static bool Platformexist(QWidget *parent);
+    static bool Systemexist(QWidget *parent);
+    
+
+private:
+    static QString platformname,link,platexist,systemexist,operationcompleted;
+
+
+
+
+
+};
+
+#endif // MESSAGE_H
