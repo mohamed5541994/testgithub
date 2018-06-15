@@ -10,8 +10,7 @@ public:
     Message();
     static void Platformname(QWidget *parent);
     static void Link(QWidget *parent);
-    static bool Platformexist(QWidget *parent);
-    static bool Systemexist(QWidget *parent);
+    
     
 
 private:
