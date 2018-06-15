@@ -1,0 +1,22 @@
+#ifndef DBCONNECTION_H
+#define DBCONNECTION_H
+
+#include<QSqlDatabase>
+//this class is used to open and clos database
+
+
+class DBconnection: public QSqlDatabase
+{
+
+public:
+    DBconnection();
+    ~DBconnection();
+    bool open();
+    void olose();
+
+private:
+    QSqlDatabase *db = nullptr;
+
+};
+
+#endif // DBCONNECTION_H
